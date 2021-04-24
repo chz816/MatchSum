@@ -2,7 +2,7 @@
 We process the generation results for MATCHSUM: ACL 2020 paper: *[Extractive Summarization as Text Matching](https://arxiv.org/abs/2004.08795)*. The generated results are released in the official repo: https://github.com/maszhongming/MatchSum. We process the results for CNNDM and XSUM. Relied on the datasets released by HuggingFace, we compare the generation results for MATCHSUM and generate the following files:
 - ```test.source```: contains the input document
 - ```test.target```: contains the headline, which serves as the ground truth for summarization task
-- ```test_generation.txt```: contains the generation results from MATCHSUM
+- ```test_generations.txt```: contains the generation results from MATCHSUM
 
 Here are the links to download the HuggingFace dataset:
 - CNN/DM: https://cdn-datasets.huggingface.co/summarization/cnn_dm_v2.tgz
@@ -60,4 +60,4 @@ Summary: the bbc said there are no current plans to broadcast a spin-off series 
 
 - The generation results ```test_generation.txt``` is lowercased, which is consistent with the released results for MATCHSUM. Both ```test.source``` and ```test.target``` are from HuggingFace.
 
-- We also clean out some prefix like ```-lrb-```, ```-rrb```, ```-lsb``` and ```-rsb```.
+- We also clean out some prefix like ```-lrb-```, ```-rrb-```, ```-lsb-``` and ```-rsb-```.
